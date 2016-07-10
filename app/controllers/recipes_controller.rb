@@ -1,6 +1,6 @@
 class RecipesController < ApplicationController
-  def recipe
-    @recipe = Recipe.first
-    render 'myrecipe.html.erb'
+  def index
+    @recipes = Recipe.all
+    render 'index.html.erb'
   end
 end

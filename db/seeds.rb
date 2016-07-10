@@ -5,3 +5,15 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+recipe = Recipe.new(title: "eggs", instructions: "", image: "https://upload.wikimedia.org/wikipedia/commons/0/02/Fried_egg,_sunny_side_up.jpg")
+recipe.save
+
+recip
+
+recipes.each do |recipe|
+  
+end
+
+fdsafsda
+
+fdsafds
