@@ -1,0 +1,22 @@
+<h1>New recipe:</h1>
+<%= form_tag '/recipes', method: :post do %>
+  <div>
+    <%= label_tag :title %>
+    <%= text_field_tag :title  %>
+  </div>
+  <div>
+    <%= label_tag :chef  %>
+    <%= text_field_tag :chef  %>
+  </div>
+  <div>
+    <%= label_tag :ingredients  %>
+    <%= text_field_tag :ingredients  %>
+  </div>
+  <div>
+    <%= label_tag :directions  %>
+    <%= text_field_tag :directions  %>
+  </div>
+  <div>
+    <%= submit_tag "Add recipe" %>
+  </div>
+<% end %>
