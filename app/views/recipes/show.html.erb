@@ -7,3 +7,6 @@
 <div>
   <a href="/recipes/<%= @recipe.id %>/edit">Edit this recipe</a>
 </div>
+<div>
+  <%= link_to "Delete this recipe", "/recipes/#{@recipe.id}", method: :delete %>
+</div>

@@ -39,4 +39,10 @@ class RecipesController < ApplicationController
     )
     render 'update.html.erb'
   end
+
+  def destroy
+    @recipe = Recipe.find_by(id: params[:id])
+    @recipe.destroy
+    render 'destroy.html.erb'
+  end
 end
