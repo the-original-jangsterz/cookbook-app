@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   post '/recipes' => 'recipes#create'
   get '/recipes/:id' => 'recipes#show'
   get '/recipes/:id/edit' => 'recipes#edit'
+  patch '/recipes/:id' => 'recipes#update'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
