@@ -3,6 +3,11 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 $main-color: green;
 
+body {
+  font-family: Futura,"Trebuchet MS",Arial,sans-serif;
+  background-image: image-url('wood_pattern.png');
+}
+
 h2 {
   color: $main-color;
 }
