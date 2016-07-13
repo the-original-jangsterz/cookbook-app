@@ -38,6 +38,8 @@ class RecipesController < ApplicationController
       ingredients: params['ingredients'],
       directions: params['directions']
     )
+    flash[:warning] = "Recipe <strong>successfully</strong> edited!"
+    flash[:success] = "But you're all good bro!"
     redirect_to "/recipes/#{@recipe.id}"
   end
 
