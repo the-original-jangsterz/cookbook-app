@@ -1,6 +1,14 @@
 <h1>All recipes</h1>
+<div class="row">
 <% @recipes.each do |recipe| %>
-  <a href="/recipes/<%= recipe.id %>"><h2><%= recipe.title %></h2></a>
-  <p><%= recipe.chef %></p>
-  <p><%= recipe.ingredients %></p>
+  <div class="col-md-4">
+    <div class="well">
+      <a href="/recipes/<%= recipe.id %>"><h2><%= recipe.title %></h2></a>
+      <p><%= recipe.chef %></p>
+      <img src="<%= recipe.image %>" alt="">
+      <p><%= recipe.ingredients %></p>
+      <p><%= recipe.directions %></p>
+    </div>
+  </div>
 <% end %>
+</div>
