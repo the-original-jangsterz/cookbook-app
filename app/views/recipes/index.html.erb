@@ -6,6 +6,7 @@
       <div class="well">
         <a href="/recipes/<%= recipe.id %>"><h2><%= recipe.title %></h2></a>
         <p><%= recipe.chef %></p>
+        <p><%= recipe.friendly_created_at %></p>
         <img src="<%= recipe.image %>" alt="">
         <h4>Ingredients</h4>
         <ul>
@@ -13,6 +14,7 @@
             <li><%= ingredient %></li>
           <% end %>
         </ul>
+        <p>Prep time: <%= recipe.friendly_prep_time %></p>
         <h4>Directions</h4>
         <p><%= recipe.directions %></p>
       </div>
