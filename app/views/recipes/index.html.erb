@@ -1,4 +1,6 @@
-<p>Welcome <%= current_user.name %>!</p>
+<% if current_user %>
+  <p>Welcome <%= current_user.name %>!</p>
+<% end %>
 <h1>All recipes</h1>
 <% @recipes.each_slice(3) do |three_recipes| %>
 <div class="row">

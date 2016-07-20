@@ -1,4 +1,6 @@
 class Recipe < ActiveRecord::Base
+  belongs_to :user
+  
   def ingredients_list
     list = []
     ingredients.split(', ').each do |ingredient|

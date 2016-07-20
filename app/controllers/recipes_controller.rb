@@ -14,7 +14,8 @@ class RecipesController < ApplicationController
       title: params['title'],
       chef: params['chef'],
       ingredients: params['ingredients'],
-      directions: params['directions']
+      directions: params['directions'],
+      user_id: current_user.id
     )
     recipe.save
     flash[:success] = "Recipe successfully created!"
