@@ -1,5 +1,6 @@
 class Recipe < ActiveRecord::Base
   belongs_to :user
+  has_many :categorized_recipes
   
   def ingredients_list
     list = []
