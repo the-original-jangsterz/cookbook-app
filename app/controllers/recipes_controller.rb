@@ -2,6 +2,9 @@ class RecipesController < ApplicationController
   def index
     sort_attribute = params[:sort]
     @recipes = Recipe.order(sort_attribute)
+    if params[:category]
+      @recipes = Category.find_by(name: params[:category]).recipes
+    end
     render 'index.html.erb'
   end
 
